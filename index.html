@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="container">
+
+        <!-- for written left side -->
+        <div class="left">
+            <div class="game-name">
+                <h3>Word Scramblle</h3>
+            </div>
+            <h1>Guess the</h1>
+            <h2>Word</h2>
+            <p>JS,HTML,CSS</p>
+        </div>
+
+        <!-- for game box -->
+        <div class="right">
+            <div class="game">
+                <h2>Word Scramblle</h2><br>
+
+                <div class="random-word">
+                    <h1 class="word"></h1>
+                </div>
+
+                <div class="tries-mistakes">
+                    <div class="tries">
+                        <p>tries:(<span id="tri">0</span>/5)</p>
+                        <div class="chance1 chance"></div>
+                        <div class="chance2 chance"></div>
+                        <div class="chance3 chance"></div>
+                        <div class="chance4 chance"></div>
+                        <div class="chance5 chance"></div>
+                    </div>
+                    <div class="mistakes">
+                        <p>mistakes:<span class="mis" id="mis"></span></p>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <input type="text" maxlength="1" class="inputWord" onchange="checkInput(event)">
+                </div>
+
+                <div class="random-reset">
+                    <button class="random" onclick="changeWord()">Random</button>
+                    <button class="reset" onclick="resetPage()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <button id="checkoutput">check</button> -->
+    <script src="./assets/script.js"></script>
+    <!-- <script src="./assets/words.js"></script> -->
+</body>
+</html>
